@@ -5,7 +5,7 @@
 4. [Database Schema](#Database_Schema)
 5. [ETL Pipeline](#ETL_Pipeline)
 6. [Queries](#Queries)
-
+------
 
 
 
@@ -16,6 +16,7 @@
 
 The Sparkify database created in this project contains data related to songs and user activity extracted from log files through ETL pipelines. The tables are designed to optimize queries on song play analysis and help the analytics team find out what songs users listen to.
 
+------
 
 ### Run Scripts <a name="Run_Scripts"></a>
 
