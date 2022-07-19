@@ -51,6 +51,7 @@ NOTE: You will not be able to run test.ipynb, etl.ipynb, or etl.py until you hav
 
 7. README.md file.
 
+------
 
 ### Database Schema <a name="Database_Schema"></a>
 
