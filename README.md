@@ -1,4 +1,4 @@
-# Table of contents
+### Table of contents
 1. [About The Project](#About_The_Project)
 2. [How To Run The Scripts](#Run_Scripts)
 3. [Project Files](#Project_Files)
@@ -16,7 +16,7 @@
 The Sparkify database created in this project contains data related to songs and user activity extracted from log files through ETL pipelines. The tables are designed to optimize queries on song play analysis and help the analytics team find out what songs users listen to.
 
 
-### HOW TO RUN THE SCRIPTS <a name="Run_Scripts"></a>
+### Run Scripts <a name="Run_Scripts"></a>
 
 1. Run create_tables.py from the terminal to create the database
    ```sh
@@ -27,6 +27,8 @@ The Sparkify database created in this project contains data related to songs and
    ```sh
    python etl.py
    ```
+   
+NOTE: You will not be able to run test.ipynb, etl.ipynb, or etl.py until you have run create_tables.py at least once to create the sparkifydb database.
 
 
 ### Project Files <a name="Project_Files"></a>
@@ -49,6 +51,11 @@ The Sparkify database created in this project contains data related to songs and
 ### Database Schema <a name="Database_Schema"></a>
 
 The following entity-relationship diagram shows a star schema optimized for queries created using the Sparkify database. 
+
+Fact table: songplays
+
+Dimension tables: songs, users, artists, time
+
 ![](images/star-schema.png)
 
 
