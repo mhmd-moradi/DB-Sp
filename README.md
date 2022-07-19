@@ -4,6 +4,7 @@
 3. [Project Files](#Project_Files)
 4. [Database Schema](#Database_Schema)
 5. [ETL Pipeline](#ETL_Pipeline)
+6. [Queries](#Queries)
 
 
 
@@ -62,3 +63,41 @@ Dimension tables: songs, users, artists, time
 ### ETL Pipeline <a name="ETL_Pipeline"></a>
 
 Reads and processes files from song_data and log_data in the data folder and loads them into the tables.
+
+
+### Queries <a name="Queries"></a>
+
+Sample Queries:
+
+1. Find the number of songs played on Monday in the 47th week of 2018.
+
+   ```sh
+   SELECT count(*) 
+   FROM songplays 
+   JOIN time ON songplays.start_time = time.start_time WHERE week = 47 AND weekday = 0 AND year = 2018
+   ```
+   
+   Output:
+   
+   count
+   276
+
+2. Find the top 3 users who have more than 500 song plays.
+
+   ```sh
+   SELECT user_id, first_name, last_name 
+   FROM users 
+   WHERE user_id IN (SELECT user_id 
+                       FROM songplays 
+                       GROUP BY songplays.user_id 
+                       HAVING COUNT(*) > 500)
+   ```
+   
+   Output:
+   
+   |    user_id       |     first_name      | last_name    |
+   |------------------|---------------------|--------------|
+   | 80               | Tegan               | Levine       | 
+   | 49               | Chloe               | Cuevas       | 
+   | 97               | Kate                | Harrell      | 
+   
