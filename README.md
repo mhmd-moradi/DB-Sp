@@ -5,6 +5,7 @@
 4. [Database Schema](#Database_Schema)
 5. [ETL Pipeline](#ETL_Pipeline)
 6. [Queries](#Queries)
+
 ------
 
 
@@ -32,6 +33,7 @@ The Sparkify database created in this project contains data related to songs and
    
 NOTE: You will not be able to run test.ipynb, etl.ipynb, or etl.py until you have run create_tables.py at least once to create the sparkifydb database.
 
+------
 
 ### Project Files <a name="Project_Files"></a>
 
@@ -60,11 +62,13 @@ Dimension tables: songs, users, artists, time
 
 ![](images/star-schema.png)
 
+------
 
 ### ETL Pipeline <a name="ETL_Pipeline"></a>
 
 Reads and processes files from song_data and log_data in the data folder and loads them into the tables.
 
+------
 
 ### Queries <a name="Queries"></a>
 
