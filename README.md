@@ -4,7 +4,7 @@
 3. [Project Files](#Project_Files)
 4. [Database Schema](#Database_Schema)
 5. [ETL Pipeline](#ETL_Pipeline)
-6. [Queries](#Queries)
+6. [Extra Test Queries](#Queries)
 
 ------
 
@@ -71,9 +71,7 @@ Reads and processes files from song_data and log_data in the data folder and loa
 
 ------
 
-### Queries <a name="Queries"></a>
-
-Sample Queries:
+### Extra Test Queries <a name="Queries"></a>
 
 1. Find the number of songs played on Monday in the 47th week of 2018.
 
